@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Time Zone Assistant",
+  "version": "1.0",
+  "description": "Easily convert time between two time zones.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://formspree.io/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/earth.png",
+      "48": "images/earth.png",
+      "128": "images/earth.png"
+    }
+  },
+  "icons": {
+    "16": "images/earth.png",
+    "48": "images/earth.png",
+    "128": "images/earth.png"
+  }
+}

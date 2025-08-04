@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Zone Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Calendly Call to Action Button -->
+    <button id="calendlyBtn" class="calendly-btn"><i class="fa fa-calendar"></i> Schedule Meeting</button>
+    <h2>My Time</h2>
+    <select id="timezone1"></select>
+    <div id="time1" class="time-display"></div>
+
+    <h2>Their Time</h2>
+    <select id="timezone2"></select>
+    <div id="time2" class="time-display"></div>
+    
+    <!-- Feedback Button -->
+    <button id="openFeedbackBtn" class="feedback-btn">Send Feedback</button>
+  </div>
+
+  <!-- Feedback Modal -->
+  <div id="feedbackModal" class="modal">
+    <div class="modal-content">
+      <span id="closeFeedbackBtn" class="close">&times;</span>
+      <h3>Send Feedback</h3>
+      <form id="feedbackForm">
+        <div class="form-group">
+          <label for="issueType">Issue Type:</label>
+          <select id="issueType" required>
+            <option value="">Select an issue type</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="general">General Feedback</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="bugSummary">Summary:</label>
+          <input type="text" id="bugSummary" placeholder="Brief description of the issue" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="details">Details:</label>
+          <textarea id="details" placeholder="Please provide more details..." rows="4" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email (optional):</label>
+          <input type="email" id="email" placeholder="your@email.com">
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>JD Solutions</p>
+    <p>&copy; 2025 All rights reserved</p>
+  </footer>
+
+  <script src="popup.js"></script>
+  <script src="feedback.js"></script>
+</body>
+</html>
