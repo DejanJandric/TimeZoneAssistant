@@ -3,7 +3,7 @@
 A simple, fast, and lightweight Chrome Extension to handle time zone conversions and schedule meetings across the globe, directly from your Chrome Browser!
 
 
-![alt text](https://ibb.co/pBYq3TSD)
+![alt text]([https://ibb.co/pBYq3TSD]
 
 ## Features
 
@@ -43,4 +43,5 @@ Click the "Send Feedback" button to report bugs, request features, or provide ge
 
 
 If you encounter any issues, please use the feedback form in the extension or create an issue in the repository. 
+
 
